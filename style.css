@@ -1,0 +1,137 @@
+/* Reset and Universal Styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Full Background */
+body {
+    background: linear-gradient(to bottom right, #1d2671, #358e69);
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Ensure vertical layout */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Title Styling */
+.app-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Card Container */
+.card {
+    width: 90%;
+    max-width: 400px; /* Reduced width */
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px 25px; /* Reduced padding */
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin-top: 10px; /* Space below title */
+}
+
+/* Search Bar */
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: #555;
+    padding: 10px 20px;
+    height: 50px; /* Reduced height */
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px; /* Adjusted font size */
+}
+
+.search button {
+    border: 0;
+    outline: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 50px; /* Reduced button size */
+    height: 50px;
+    cursor: pointer;
+}
+
+.search button img {
+    width: 16px; /* Adjusted icon size */
+}
+
+/* Weather Section */
+.weather {
+    display: none; /* Hidden by default */
+    margin-top: 15px; /* Space below the search bar */
+}
+
+.weather-icon {
+    width: 150px; /* Reduced icon size */
+    margin-top: 20px;
+}
+
+.weather h1 {
+    font-size: 60px; /* Reduced font size */
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 35px; /* Reduced font size */
+    font-weight: 400;
+    margin-top: -5px;
+}
+
+/* Weather Details */
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px; /* Adjusted margin */
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Adjusted spacing */
+}
+
+.col img {
+    width: 30px; /* Reduced icon size */
+}
+
+.humidity, .wind {
+    font-size: 22px; /* Reduced font size */
+    margin: 0;
+}
+
+/* Error Message */
+.error {
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
